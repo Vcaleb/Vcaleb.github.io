@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Curriculum Vitae</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            <h1>Francisco Carr</h1>
+            <a id="abrir" class="abrir-cerrar" href="javascript:void(0)" onclick="mostrar()">
+                <img id="botonmenu" src="icon_menu.jpg">
+            </a>
+        </div>
+    </header>
+    <div id="barraLateral">
+        <a id="cerrar" class="abrir-cerrar" href="javascript:void(0)" onclick="ocultar()">
+            Cerrar menu
+        </a>
+        <nav id="nav">
+            <ul>
+                <a id="navPresentacion">PRESENTACIÓN</a></li>
+                <a id="navFormacion">FORMACIÓN</a></li>
+                <a id="navAptitudes">APTITUDES</a></li>
+                <a id="navExperiencia">EXPERIENCIA</a></li>
+                <a id="navContacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <section id="main">
+            <div id="presentacion" class="texto">
+                <img class= "imagenIzquierda" src="https://randomuser.me/api/portraits/men/22.jpg" alt="foto retrato de Francisco Carr">
+                <h2 class="Titulo">Francisco Carr</h2>
+                <h3> Programador</h3>
+                <h4>9/4/1997</h4>
+                <p class="resumen">Me presento, soy Francisco Carr. Joven programador con ambiciones y ganas de avanzar en el mundo de la tecnología. Me considero una persona autodidacta y resposable. En busqueda de nuevas oportunidades laborales.</p>
+            </div >
+            <div id="formacion" class="texto">
+                <h2 class="Titulo">Formacion</h2>
+                <ul class="lista">
+                    <li>Gradudado del colegio nacional de Monserrat 2009-2015</li>
+                    <li>Aprobado curso de programación desde 0 by Egg</li>
+                    <li>Aprobado curso de introduccion a la programación web en Oracle</li>
+                    <li>Aprobado curso de Java orientado a objetos en Oracle</li>
+                    <li>Actualmente estudiante de la Tecnicatura superior en programación</li>
+                    <li>Cientas de horas dedicadas al autoaprendizaje</li>
+                </ul>
+                <img class="imagenDerecha" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwlH4VYGtR5GctL7zLOJswmbvAGoLbPLj-464UCb623g&s" alt="icon formacion">
+            </div>
+            <div id="aptitudes" class="texto">
+                <img class="imagenIzquierda" src="data:image/png;base64,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" alt="icon aptitudes">
+                <h2 class="Titulo">Aptitudes</h2>
+                <ul class="lista">
+                    <li>Puntualidad</li>
+                    <li>Responsabilidad</li>
+                    <li>Alto nivel de TeamWork</li>
+                    <li>Disponibilidad Horaria</li>
+                    <li>Idiomas: Español, Ingles y Frances</li>
+                    <li>Conocimiento sobre Javascript, css, jquery y java</li>
+                    <li>Una persona a la cual le faltan aun conocimientos pero capaz de solucionar problemas con pensamiento lateral, encontrando asi nuevos caminos</li>
+                </ul>
+            </div>
+            <div id="experiencia" class="texto">
+                <h2 class="Titulo">Experiencia</h2>
+                <ul class="lista">
+                    <li>1 año como beta tester en Bethesda</li>
+                    <li>2 Años como programador junior en Bethesda</li>
+                    <li>1 año de pasantia en Facebook</li>
+                    <li>actualmente desarrollando videojuego indie</li>
+                </ul>
+                <img class="imagenDerecha" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAjVBMVEX////MzM8hHh7u7u4AAAALAwPPz9LU1NcdGRlBPj+/vsGampoWExNnZmanp6nb29tgX1/LysqCgYERDQ34+Ph4d3dWVFTl5eUtKiq5uLiurq5bWFqVlZUPCQmoqKrGxsmJiIpLSUklIiJxcHCgn5+Pjo6Af39EQkI6NziXl5fq6elsamwxLzBNS0wqJyj9wZRyAAAJh0lEQVR4nO2daXuyOhCGgYYQFVfsoi1qXarWvv7/n3cQEkggrEIgnDxf2gsw5HbMTJYhaJqSUk80XY+6pvW0TsArAGbXBMC1PsA5MLooMK+N8OS2DcOVe6qNcGy3DcOVPVaEZQmR3RWhZgjRYNYVDVAjhOaxtgKf1dFshnBUW4HPaqQIy0oRCpciLC1FKFyKsLQUYUzTVVUVHba3TTgCVVX4Di0TBr3GCirc81WEpaUIY/ofEAJUTUAaQvRRTUgWwualCEtLET40PU7q1DGzA9cK4bretRuw7iBhxSDIlyJUhCU16yjhrC7AU7Awk0dY69pLEULDrmcB8f2MO9LZhMPvtzr1PSxAaJjn9+cBj4AsHnYu4j+sWLiznqbfWdS8ukjoNdjZ7zMlrQzH6DihV8NV5XKWB4CMNMLp8WchTj9sL44mNBA4LKsBzu9sCgZDeASmI1Im0+BG7CyCe6+Ud3JiDBgjfBefYQMotxkj9MxYPm5MzyD6+If/lybctEC4SRB+REYA55JJYFGMMNy/6SHRp/kSn0PkfsUJ7cP0L6xHubjx+0kZ8HXJ6Zd2g3CsLV8pM34WjhtUjHDshytOJURCvAxKJ/Qqa0eVLRg3ljfqa3l70TII0eXntXn9XFAGofbyRv3gbgXixtyIftrmJDiWRvj4mTQvfPs0Qk2bmJHTMHLjxo4y4DdxT+mEy5fmtcwj1KbflBl3mXxMjIhCTNcJmeCdGTfoGHG3ouPdJ9Sse4G48fvGxgipCNm48caNGytExQh2/CkDoTcGj+KGjZJxgx5H4BghGyEbN+Ljjbkd/YzdSRxfEkIvbriRI3HouLFkXFFy6kMaQu2dDga70IxUjDBs3kMMyQzaKyEUIUxI1Swjg/Ya5aSDAY4bVIzwuuurdUKr7yDp+BYdwnnR35tj89rg24+j29/w7XmVPVA0QdwYM0M9m5fmghLncCmo1tWYNKXfnldZ5rkC4Jl50s3nYeqSZ8Uzyr9MYqGz1m9AD1FruwaNixBWzIDpslhCdBn0TRfEEJobq2/amCzhBOr9EpwoQtmlCOWXIpRfirBIEdmirsssJL+8shXDxT1LCGH2ThkbHeLrNms9rWyobzaYwPuXW85xM7QqQT5LCDf37GxLYI+gfx9vHL5PKRxO9gAg/yQc2WnlAeOwqoD4LOHWyBtXIrCGOhw+piCQPeSVDoeP/j8yvZNwHU8aoOU4h235RvQcIfzKf6TCefVqvgvm5GYWpxArSAh0F951r05mWe6gNOKzhDk1IlgQT3yZnN8ZXOH0u5ulW285Pwn7su0eobnzbEOSCDlGtPBeFOYXzCc0nFlZV9g0IXKDb/2Ot7BIGBGuyLSfd10+YXlfWBNh6mYgf4FzgDtsxHGCMJjV9ZthSIiS5QF8J/utDUJ7Nk0dYuPytn9B3eMtkbRCdH+YGhM6u2Q52wW2NSjXEmsi/OT5SPbKwJsmWiJphe7CoggXnFpYp8CK5qhcFUUR6lvcEgETE+EwmGpHe98yWYS6tQ++i1NHCflGZE2YQ4hP/nSUUIfYTTpUS4Qr4j9YCD7hp/9tPHoQZaookDB0p9HFkQmD28pNGLbEKCaSWIhbofSEYUsMYyIkJtzhI5ITJmJiGAs/SIiTndCKuVPSCp0F+bjshLoe3ATHRBILDRT2UqQnDN2pb8TQke7CT0tPqOv7yJ1Gg4rotPyE9BAjHFTsolvKT6hvPwIjeh0b3J0JBhVYPSAM3emY0wp7QRga0Z3gLP8PerjXB0JiRCJ3wQw1ekCo6+xMDGLOZROeM06mV1E4IWSMSDtSPZsQbnHDbWkEXHw9ZX6PrBgOKuKEvPKCiWMDbFogRP82adtarBOMJCZyTEgI7XGypNOAJCKWqWBts4np2ZcAHeMlkiGG97G/2LwZmU20kwW5ZIrg0M58abpQYiY/cqdMLKQJs8rjru60Scjx7iQmsrGwGKG5KwcoamUmxjHDhMkzeYTgUCIuiSJMfOvRoCKxipFDiMyfsoACVmacuDfRrVtIeCveDhFywL9ygaJOQuSmyLzf4p4hMmHSiOHKTLKk+/k1GXmEEdqfuSsz1Geo3fntG5eQtzJjVUtUaKPXNqQXxk3Wwpn90moST2hRJmQnwPV+EIYmRDwj9oGQmBANyJsbCo8Pq0k0IVxh2+23e2xL2p32gTCcYAtnbG5F52mqSfRsIplg+9hCatotPC8/IT3BxjOi9IThqr0/R0rWEyl3Kj1hLPFikTCi7IRwhYe+CN8Ex343bImyE1qxJV+YaImSEyZW7fUtXooKY6LshPFVex2GLbEXhOGqPTUkDlcxhgWyTapJICFOBWYm2KxF0AMgvVOpCWMZbFjb4LYk201qQp4JqZg4zs9rqyZx2ZecVXtfZBsB3512mTBvZSbpSPFxpmPTWUL0b73ha7IKGMNYeI/PLZKY6D+L0VnCrJUZw1+ZgbxVe1/REKPThBnyV2aSGWyR6CGGlIT0MzMcE0Yx8dFCq6UBN0q4KLAy4zlai2wWwy0Fhd8ESUYou8CUVcUnCY/5e774z8x8AfJvUtbCrwO4QrI+DGp8zvPpp/O+yb44aXKCpnfxfqbuOaWUwePk4PHf9sPxWu6/+gCff8Jye7hnvn3LGAeZltsbMm4pD555Jw0DP1szHKP7a9mnt7L0/FOyMGdbChLzIWeRhi6EXJZ5XQWpJ53llyKUX4pQfilC+ZUgrJCx0m3B2E5Y7mjYN41chtBwK7z5tdsiiZD/n10F+ytt33YNGtZe+7Tzr5JY9qc2z9oZRnohMNe01T7XLZFV6egIedi8QV+YuL0THXGL3n4f7M2etyn3Em+Vc4oOnfC+GO/T5vUe3N6hb4839smtOWc7bK6SO5ZfW9ixnNrPW8AbHru6J7siVISKUBEqQkXYAuFNyDu7bu0R8l8wUbsy3yzXMKFIKcKaCa/5u3vWLVNsz3vVwntIqddwCSBc7kVPfth7arAngFCbXoS40UgX+p1/Igg17X0uUuyLxMQQtilFWFpFCOvvrHWNcF2zZ1l3kLDW4KAIFaEiVIRcwr770uV7vepePBQqRVhaJQlfKi8VvuQX7qttwmtl98J7GTFPbRMeq07imGmvfY9LEZaWIoxJEcpP2H9f2rwUYWkpQuFShKWlCIVLEZaWIhSuhgjdq4jsmSIKE3hrJqQTrVsW2aGobsKuSRGW0K2jhLfaCAvsgtGGQNEBc75+3S4a0XZ/ayMUnz1TREyGzfOqPo/dlIrOjyspdV//AcYXYZYk67HkAAAAAElFTkSuQmCC" alt="icon experiencia">
+            </div>
+            <div id="contacto" class="texto">
+                <img class="imagenIzquierda" src="https://icon-library.com/images/contact-icon-png/contact-icon-png-1.jpg" alt="icon contacto">
+                <h2 class="titulo">Contacto</h2>
+                <ul class="lista">
+                    <li>francisco.carr@example.com</li>
+                    <li>256 Marsh Ln</li>
+                    <li>(678) 509-0878</li>
+                    <li>ln: Francisco Carr</li>
+                    <li>gh: Francisco.carr</li>
+                </ul>
+            </div>
+        </section> 
+    </main>
+</body>
+<script src="funciones.js"></script>
+</html>

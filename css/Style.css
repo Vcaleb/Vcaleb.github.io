@@ -1,0 +1,135 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color:#95bfff ;
+    font-size: 20px;
+    width: 100%;
+}
+header{
+    background-color: rgb(112, 188, 238);
+    padding: 4em 0;
+    text-align: center;
+}
+#botonmenu{
+    height: 4em;
+    width: auto;
+}
+.abrir-cerrar{
+    position: absolute;
+    top: 1em;
+    left: 1em;
+}
+h1{
+    font-size: 4em;
+    width: auto;
+}
+#barraLateral{
+    padding-top: 3em;
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    transition: 0.3s;
+    background-color: #0066ff;
+}
+nav a {
+    color: #ffffff;
+    display: block;
+    font-size: 30px;
+    padding: 10px 10px 10px 32px;
+    border-bottom: 100%;
+    border-color: black;
+    
+
+}
+.texto{
+    height: auto;
+    width:auto;
+    background-color:#ffffff;
+    margin: 20px 18%;
+    padding: 50px 1%;
+    text-align: center;
+    display: inline-block;
+    width: 60%;
+
+}
+h2{ 
+    font-size: 2em;
+    padding: 10px 0px 0px 5px;
+
+}
+h3{
+    padding-bottom: 20px;
+    font-style: oblique;
+}
+h4{
+    font-style: oblique;
+    padding-bottom: 20px;
+}
+.resumen{
+    text-align: left;
+    font-size: 18px;
+    width: 40%;
+    padding-left: 42.5%;
+}
+.imagenIzquierda{
+    height: auto;
+    width: 183px;
+    float: left;
+}
+.imagenDerecha{
+    width: 183px;
+    height: auto;
+    float: right;
+}
+.lista{
+    vertical-align: top;
+    width: 50%;
+    display: inline-block;
+}
+.lista li{
+    padding-left: 0px;
+    padding-bottom: 15px;
+    text-align: left;
+}
+.lista li::before{
+    content: "★";
+}
+@media screen and (max-width:600px) {
+    h1{
+        font-size: 2em;
+    }
+    h1,h2{
+        text-align: center;
+        padding: 0;
+    }
+    header{
+        height: auto;
+        width: 100%;
+        padding: 4% 0%;
+    }
+    .encabezado{
+        width: 100%;
+        margin: 0%;
+        padding-top: 3em;
+    }
+    .texto{
+        width: 90%;
+        margin: 4%;
+        padding: 1%;
+    }
+    .resumen{
+        width: auto;
+        padding: 0%;
+    }
+
+    .lista, .imagenDerecha, .imagenIzquierda{
+        width: 100%;
+    }
+    .lista li{
+        padding: 15px 0px;
+        text-align: left;
+        display: block;
+    }
+}
